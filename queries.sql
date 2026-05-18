@@ -26,7 +26,6 @@ FROM produtos
 WHERE estoque < 10
 ORDER BY estoque ASC;
 
--- Excelente para o time de marketing saber quem são os leads "frios"
 SELECT c.nome, c.email
 FROM clientes c
 LEFT JOIN pedidos p ON c.id_cliente = p.id_cliente
