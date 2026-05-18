@@ -1,6 +1,6 @@
 -- Criando a tabela de Clientes
 CREATE TABLE clientes (
-    id_cliente INTEGER PRIMARY KEY AUTOINCREMENT, -- No PostgreSQL use SERIAL, no MySQL use AUTO_INCREMENT
+    id_cliente INTEGER PRIMARY KEY AUTOINCREMENT,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     data_cadastro DATE DEFAULT CURRENT_DATE
